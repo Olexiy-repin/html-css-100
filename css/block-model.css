@@ -24,6 +24,10 @@ button {
   cursor: pointer;
 }
 
+html {
+  line-height: 1.2;
+}
+
 .list {
   list-style-type: none;
 }
@@ -93,6 +97,6 @@ b - довільне число
   background-color: teal;
 } */
 
-.products-list-item:nth-child(even) .products-list-img {
+/* .products-list-item:nth-child(even) .products-list-img {
   border: 10px solid teal;
-}
+} */
