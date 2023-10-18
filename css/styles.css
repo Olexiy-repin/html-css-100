@@ -1,4 +1,30 @@
 /* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style-type: none;
 }
@@ -7,12 +33,36 @@
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .accent-color {
@@ -32,12 +82,30 @@ body {
 /* ============== /COMMON STYLES ============== */
 
 /* ============== HEADER STYLES ============== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 980px;
+}
+
 .logotype {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111111;
+}
+
+.menu {
+  display: flex;
+  column-gap: 24px;
 }
 
 .menu-link {
@@ -113,7 +181,16 @@ body {
 /* ============== /BENEFITS STYLES ============== */
 
 /* ============== INGREDIENTS STYLES ============== */
+
+.ingredients-title {
+  width: 411px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
 .ingredients-description {
+  width: 486px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -121,6 +198,44 @@ body {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111111;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 19px;
+}
+
+.ingredients-list-item {
+  width: calc((100% - 57px) / 4);
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-right: 36px;
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.ingredients-list-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  border-color: #1e1823;
+  color: #ffffff;
+}
+
+.ingredients-list-img {
+  margin-bottom: 36px;
 }
 
 .ingredients-list-title {
