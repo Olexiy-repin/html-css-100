@@ -23,11 +23,19 @@
   <body>
     <!-- PAGE HEADER -->
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="page-navigation">
-          <a class="logotype link" href="./index.html"
-            ><i>SIMPLY</i> CHOCOLATE</a
-          >
+          <a class="logotype link" href="./index.html">
+            <i>SIMPLY</i> CHOCOLATE
+            <svg
+              class="logotype-icon"
+              width="24"
+              height="24"
+              aria-label="simply chocolate logotype icon"
+            >
+              <use href="./images/icons/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
           <ul class="menu page-header-menu list">
             <li class="menu-item">
               <a class="menu-link link" href="./index.html">Home</a>
@@ -40,6 +48,22 @@
             </li>
           </ul>
         </nav>
+        <ul class="social-list list">
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-list-link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -115,15 +139,41 @@
                 height="160"
               />
               <h3 class="ingredients-list-title">milk chocolate</h3>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <ul class="overlay-tags-list list">
+                  <li class="overlay-tags-list-item">
+                    <p class="overlay-tags-list-text">chocolate</p>
+                  </li>
+                  <li class="overlay-tags-list-item">
+                    <p class="overlay-tags-list-text">the benefits</p>
+                  </li>
+                </ul>
+                <p class="overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="ingredients-list-item">
-              <img
-                class="ingredients-list-img"
-                src="./images/ingredients/milk.png"
-                alt="milk"
-                width="206"
-                height="160"
-              />
+              <div class="overlay-wrapper">
+                <img
+                  class="ingredients-list-img"
+                  src="./images/ingredients/milk.png"
+                  alt="milk"
+                  width="206"
+                  height="160"
+                />
+                <p class="text-overlay">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  architecto nisi harum a, perferendis saepe commodi dicta.
+                  Doloribus, hic recusandae.
+                </p>
+              </div>
+
               <h3 class="ingredients-list-title">milk</h3>
             </li>
             <li class="ingredients-list-item">
