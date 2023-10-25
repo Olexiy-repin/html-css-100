@@ -108,12 +108,16 @@ body {
   column-gap: 24px;
 }
 
+.page-header-menu {
+  color: #111111;
+}
+
 .menu-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: inherit;
 }
 
 .menu-link:hover,
@@ -123,16 +127,41 @@ body {
 /* ============== /HEADER STYLES ============== */
 
 /* ============== HERO STYLES ============== */
+.hero {
+  max-width: 1136px;
+  padding-top: 381px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.6);
+}
+
 .main-title {
+  max-width: 470px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.hero-bottom-block {
+  display: flex;
+  align-items: center;
 }
 
 .buy-now-btn {
+  min-width: 144px;
+  height: 45px;
   font-size: 14px;
   font-weight: 600;
+  margin-right: 14px;
+  border-radius: 100px;
+  border: none;
   background-color: #fd9222;
   color: #ffffff;
 }
@@ -144,20 +173,33 @@ body {
 }
 
 .how-made-link {
+  display: flex;
+  align-items: center;
+  min-width: 183px;
+  height: 45px;
   font-size: 14px;
   font-weight: 600;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .how-made-link:hover,
 .how-made-link:focus {
   color: #fd9222;
+  border-color: #fd9222;
 }
 
 .scroll-down-link {
+  display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
+  color: #ffffff;
 }
 
 .scroll-down-link:hover,
@@ -167,9 +209,31 @@ body {
 /* ============== /HERO STYLES ============== */
 
 /* ============== BENEFITS STYLES ============== */
+.benefits {
+  margin-top: 72px;
+  margin-bottom: 50px;
+  background-color: #1e1823;
+}
+
+.benefits-container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.benefits-list {
+  display: flex;
+  column-gap: 88px;
+}
+
+.benefits-list-item {
+  width: calc((100% - 196px) / 3);
+}
+
 .benefits-list-title {
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 18px;
+  color: #ffffff;
 }
 
 .benefits-list-text {
@@ -177,11 +241,11 @@ body {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
 }
 /* ============== /BENEFITS STYLES ============== */
 
 /* ============== INGREDIENTS STYLES ============== */
-
 .ingredients-title {
   width: 411px;
   margin-left: auto;
@@ -248,11 +312,33 @@ body {
 /* ============== /INGREDIENTS STYLES ============== */
 
 /* ============== HOW MADE STYLES ============== */
+.how-made-content-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.how-made-text-wrapper {
+  flex-grow: 1;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
 .how-made-title {
+  margin-bottom: 50px;
+}
+
+.how-made-list-title {
+  max-width: 350px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 32px;
   color: #111111;
+}
+
+.how-made-list {
+  padding-right: 26px;
 }
 
 .how-made-list-item {
@@ -262,9 +348,35 @@ body {
   letter-spacing: -0.02em;
   color: #111111;
 }
+
+.how-made-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
 /* ============== /HOW MADE STYLES ============== */
 
 /* ============== REVIEW STYLES ============== */
+.reviews-title {
+  margin-bottom: 50px;
+}
+
+.reviews-list {
+  display: flex;
+  column-gap: 28px;
+  margin-bottom: 50px;
+}
+
+.reviews-list-item {
+  width: calc((100% - 56px) / 3);
+  padding-top: 56px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
 .reviews-list-fullname {
   font-size: 18px;
   font-weight: 600;
@@ -283,9 +395,18 @@ body {
 }
 
 .leave-review-btn {
+  display: block;
+  width: 222px;
   font-size: 18px;
   font-weight: 600;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
   color: #111111;
+  background-color: #ffffff;
 }
 
 .leave-review-btn:hover,
@@ -296,18 +417,32 @@ body {
 /* ============== /REVIEW STYLES ============== */
 
 /* ============== FOOTER STYLES ============== */
+.page-footer {
+  background-color: #1e1823;
+}
+
+.page-footer-top-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .page-footer-title {
+  width: 300px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.02em;
+  color: #ffffff;
 }
 
 .contact-title {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
-  text-align: center;
+  color: #ffffff;
+  margin-bottom: 14px;
 }
 
 .contact-list-link {
@@ -316,6 +451,18 @@ body {
   font-style: normal;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  text-align: center;
+  color: #ffffff;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.page-footer-bottom-block {
+  padding-top: 24px;
+}
+
+.page-footer-menu {
+  color: #ffffff;
 }
 /* ============== /FOOTER STYLES ============== */
