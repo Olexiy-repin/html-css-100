@@ -803,4 +803,15 @@ body {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
+.review-form-btn {
+  min-width: 118px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #fd9222;
+}
 /* ============== /REVIEW FORM STYLES ============== */
