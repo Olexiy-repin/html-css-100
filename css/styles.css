@@ -52,6 +52,10 @@ body {
   overflow: hidden;
 }
 
+.accent-color {
+  color: #fd9222;
+}
+
 .container {
   width: 1168px;
   margin-left: auto;
@@ -63,10 +67,6 @@ body {
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.accent-color {
-  color: #fd9222;
 }
 
 .section-title {
